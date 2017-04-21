@@ -1,0 +1,207 @@
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans|Rubik+Mono+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <link href="w3.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="fonts.css">
+
+</head>
+
+<body>
+    <div style="position:relative; margin: auto; width: 100%; height: auto; background:none; text-align: center">
+        <h1>Anatomy Coloring Book</h1>
+    </div>
+    <div style="position:relative; margin: auto; margin-bottom:0px;padding:0px; width: 50%; height: auto; background:none; text-align: center; ">
+        <h3>how well do you know yourself?</h3>
+    </div>
+    <div style="background:black; height:1px">
+
+    </div>
+    <div id='talkingbox1' style="position:relative; margin: auto; width: 50%; background:none; text-align: center">
+        <p> Welcome to the heart! Color the parts that hold oxygenated blood red, and the parts that hold deoxygenated blood blue.</p>
+    </div>
+    <div class='w3-row' style='position:relative; margin: auto;'>
+
+        <div class="w3-third">
+            <div class="container" style="height:100px; margin-left:20px">
+                <div>
+                    <h3 style="text-align:center">Your Palette:</h3>
+                    <p style="text-align:center"> Click on a color to select it, then click on the heart parts to fill them</p>
+                </div>
+
+
+            </div>
+
+            <div class="container" style="height:130px;  margin-left:20px">
+                <div class="w3-half w3-round-xlarge" id="palette" style="height:100%; width: 48%; margin-right:1%"></div>
+                <div class="w3-half w3-round-xlarge" id="palette" style="height:100%;  width: 48%; margin-left:1%"></div>
+            </div>
+            <div id="talkingbox2" style="position:relative;  margin-left:20px; height:auto;">
+                <h3 style="text-align:center"> Your Results:  </h3>
+                <p style="text-align:center">Hit submit once you've filled in all the parts to see if you know your ticker!</p>
+
+                <button class="w3-btn w3-hover-green w3-round-large w3-large" style="margin: auto" id='submitbutton'>submit</button>
+            </div>
+        </div>
+        <div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 393.88 563.9" width='60%' height='70%'>
+                <defs>
+                    <style>
+                        /*
+                        .cls-1,
+                        .cls-2,
+                        .cls-3,
+                        .cls-4,
+                        .cls-5 {
+                            fill: #fff;
+                        }
+*/
+                        
+                        .cls-1,
+                        .cls-2,
+                        .cls-3,
+                        .cls-4 {
+                            stroke: #231f20;
+                            stroke-miterlimit: 10;
+                        }
+                        
+                        .cls-1 {
+                            stroke-width: 3px;
+                        }
+                        
+                        .cls-2 {
+                            stroke-width: 3.31px;
+                        }
+                        
+                        .cls-3 {
+                            stroke-width: 3.15px;
+                        }
+                        
+                        .cls-4 {
+                            stroke-width: 3.64px;
+                        }
+                        /*
+                        .cls-6 {
+                            fill: #3f3b3c;
+                        }
+*/
+
+                    </style>
+                </defs>
+
+
+                <g id="muscle" fill="pink">
+                    <path id="muscle-2" data-name="muscle" class="cls-1" d="M185.91,539.25c-3.61-2.66-6.9-5.33-9.92-8a123.11,123.11,0,0,1-14.09-14.58c-11-13.49-15.85-25.82-19-34.37-8.47-23-17.53-49-12.53-72,4.8-22.09,5.37-64.75,7.42-92.76,0,0-32.42,107.26-26.42,139.26a168.23,168.23,0,0,0,25.83,64.33c12.33,18.32,30.44,37.39,57.36,54.52a281.46,281.46,0,0,0,45.8,23.3c103.5,41.84,202,47.84,233,16.34s20-153.5,5-181-18.5-43.5-26.5-51.5-17.5-13.5-19-19-23.5-58.5-43-69-39-17-72.5-9.5a95.91,95.91,0,0,0-9,19.5s23-12.5,41-11,42,9.5,54,35.5,15.5,31,15,47.5-1,61.5,22.5,108.5-3.5,92.5-8,92.5-21-5.84-41.5-56.67-58-51.83-71-72.33-20.5-22.5-20.5-22.5l1.5,17s20.18,13.52,25,32c1.94,7.42,8.4,36.31,24,61.33,16.64,26.69,42,34.67,44,54.67,1,10.39-11.32,13.24-103-9-27.05-6.56-83.24-22.76-105.46-43.06" transform="translate(-109.13 -100.97)" />
+                </g>
+
+                <g id="heart">
+                    <g id="SVC" fill="white">
+                        <path id="SVC-2" data-name="SVC" class="cls-1" d="M139.12,315.41c2.17,7.67,10.2,25.14,37.92,19.89,24.67-4.67,24.51-14.12,25.33-28v-165c-15.67,20.33-48,25-63.25,5.5Z" transform="translate(-109.13 -100.97)" />
+                    </g>
+                    <g id="IVC" fill="white">
+                        <path id="IVC-2" data-name="IVC" class="cls-1" d="M225.54,593.77c-26.92-17.14-38.92-21-57-37.5l1.6,85.64s6.27,21.46,26.77,21.46,28.68-20,28.68-20Z" transform="translate(-109.13 -100.97)" />
+                    </g>
+                    <g id="PA" fill="white">
+                        <path id="PA-2" data-name="PA" class="cls-1" d="M326.37,475.31c-4.82-18.48-25-32-25-32s-2.52-14.21-35.75-6.75c-24.5,5.5-9.81,21.26-15.77,17.9a26.88,26.88,0,0,1-3.93-6.45c-2.78-6.2-8.17-15-6.54-27.7,2.5-19.5,3.5-41,3-50,0,0,14.67-71.67,15.33-79s-1.33-40.7,7.33-52,12.7-18,17.68-17.32,28.32,4.58,39,0,98-11.29,124.67-9.29c-13.33,8.67-13.33,30.67,0,36.67-38-3.33-96-3.33-114.67,12.67-8.13,7-17,23.81-23.31,42.3-8.17,24-12.69,50.7-12.69,62.37,0,15.5,2,39.62,3.64,59.16.55,6.51,1.94,12.51,2,17.51" transform="translate(-109.13 -100.97)" />
+                    </g>
+                    <g id="RA" fill="white">
+
+                        <path id="RA-2" data-name="RA" class="cls-1" d="M248.58,452.6c-.89-3.15-1.5-2-2.66-4.59-2.78-6.2-8.17-15-6.54-27.7,2.5-19.5,3.5-41,3-50-12.67-7-39-50-40-63-.82,13.88-.67,23.33-25.33,28-27.72,5.24-35-10.11-38.24-17.76-2,28-3.62,70.67-8.42,92.76-5,23,4.06,49,12.53,72,3.15,8.55,8,20.88,19,34.37A123.11,123.11,0,0,0,176,531.26c3,2.66,6.32,5.33,9.92,8,0,0-14.21-60.61,57.79-29.61C219.37,470.64,221.45,439.72,248.58,452.6Z" transform="translate(-109.13 -100.97)" />
+
+                    </g>
+                    <g id="RV" fill="white">
+                        <path id="RV-2" data-name="RV" class="cls-1" d="M249.85,454.45c6,3.36-8.48-12.9,15.77-17.9,33.36-6.88,35.75,6.75,35.75,6.75s20.18,13.52,25,32c1.94,7.42,8.4,36.31,24,61.33,16.64,26.69,42,34.67,44,54.67,1,10.39-6,12.67-103-9-50.8-11.35-83.73-27-105.46-43.06,0,0-14.21-60.61,57.79-29.61C219.37,470.64,222.32,438.93,249.85,454.45Z" transform="translate(-109.13 -100.97)" />
+                    </g>
+                    <g id="PV" fill="white">
+                        <path id="PV-2" data-name="PV" class="cls-2" d="M321.68,274.75l144.94-7.69s-18.25,8.5-15.13,26.5,15.13,19,15.13,19-38.25-2.5-50.5,7c27-2,67.25-3,67.25-3s-16.5,9.25-14,24.5,15.25,21.5,16,21.5-50.07-2.19-52.23.65c-8.45-19.86-18.43-39.06-21.93-43.56s-12.67-21.17-21.5-25.83S359.2,281.64,346,282.14s-27.79,2.08-30.39,4C317.65,282.07,321.68,274.75,321.68,274.75Z" transform="translate(-109.13 -100.97)" />
+                    </g>
+                    <g id="LA" fill="white">
+                        <path id="LA-2" data-name="LA" class="cls-1" d="M308.37,304.81c-2.49,6.64-8.69,31.77-11.7,49.5s3.2,72,3.2,72-2.34-23-3.25-36c7.75-8,26.75-7.45,40.25-2.45,8.5-11.5,34,.5,51.5,24,4.5-53,30-35,30-35,.5-16.5-3-21.5-15-47.5s-36-34-54-35.5S308.37,304.81,308.37,304.81Z" transform="translate(-109.13 -100.97)" />
+                    </g>
+                    <g id="LV" fill="white">
+                        <path id="LV-2" data-name="LV" class="cls-1" d="M418.37,376.81s-25.5-18-30,35c-17.5-23.5-43-35.5-51.5-24-13.5-5-32.5-5.59-40.25,2.45.91,13.07,3.25,36,3.25,36s7.5,2,20.5,22.5,50.5,21.5,71,72.33,37,56.67,41.5,56.67,31.5-45.5,8-92.5S417.87,393.31,418.37,376.81Z" transform="translate(-109.13 -100.97)" />
+                    </g>
+                    <g id="aorta" fill="white">
+                        <path id="aorta-2" data-name="aorta" class="cls-1" d="M333.87,384.8S300,348.34,297.94,347.32s-1.91,35.39-1.32,42.94C307.87,379.31,333.87,384.8,333.87,384.8Z" transform="translate(-109.13 -100.97)" />
+                        <path class="cls-1" d="M282.72,222c12.39-3.56,25.65-3.67,33.91,1.41,8.26-4.68,38.63-6.6,51.22-7.76,0-10.69-18.23-39.06-20.48-44.31s2-20.75,15.5-37.5c-3.5,2-20.15-.75-26.75-15.5-2.5,11.75-24.75,43.25-26.5,41.75s-4.25-21,3.75-43c-4.75,5.5-20.75,7.25-32.75-3,1.5,12.5-2,52-7.75,52s-21.25-25.5-30.32-44.5c-1.82,8-7.68,13.5-27.43,15.42,11.5,8.17,15.25,30.58,15.25,39.33s-28,52.5-28,52.5v78.5c1,13,27.33,56,40,63,0,0,14.67-71.67,15.33-79s-1.33-40.7,7.33-52S277.74,221.31,282.72,222Z" transform="translate(-109.13 -100.97)" />
+                    </g>
+                </g>
+                <!--                    end heart g-->
+                <g id="accents">
+                    <path class="cls-1" d="M140.12,149.81s-5.41-12.5,4.92-18.5" transform="translate(-109.13 -100.97)" />
+                    <path class="cls-1" d="M201.37,144.31s4.67-12-3-14.67" transform="translate(-109.13 -100.97)" />
+                    <path class="cls-2" d="M443.37,212.64s14.22-2.33,16.25,7" transform="translate(-109.13 -100.97)" />
+                    <path class="cls-3" d="M446.37,249.31s11.41,3.67,13.25-4" transform="translate(-109.13 -100.97)" />
+                    <path class="cls-2" d="M466.62,267.06s11.08-4.42,18.76,7.58" transform="translate(-109.13 -100.97)" />
+                    <path class="cls-2" d="M465.62,312.56s16.42.75,16.08-9.58" transform="translate(-109.13 -100.97)" />
+                    <path class="cls-2" d="M483.37,316.56s16-2.92,18,10.75" transform="translate(-109.13 -100.97)" />
+                    <path class="cls-2" d="M485.37,362.56s13.67,2.08,14.33-8.25" transform="translate(-109.13 -100.97)" />
+                    <path class="cls-1" d="M216.12,138c-6.58-2.84-7.09-9.67-.75-14.34" transform="translate(-109.13 -100.97)" />
+                    <path class="cls-1" d="M242.55,121.56s.49-7.58-5.51-7.5" transform="translate(-109.13 -100.97)" />
+                    <path class="cls-1" d="M281.24,114.87c-4-6-.63-12,7.22-12.41" transform="translate(-109.13 -100.97)" />
+                    <path class="cls-4" d="M313,118.88s6.51-9.05,1.43-12.24" transform="translate(-109.13 -100.97)" />
+                    <path class="cls-1" d="M335.78,117.43c-1.15-7.08,4.34-11.17,11.68-8.35" transform="translate(-109.13 -100.97)" />
+                    <path class="cls-4" d="M363.1,134.12s9.66-5.58,6.33-10.57" transform="translate(-109.13 -100.97)" />
+                </g>
+                <g id="arrows">
+                    <line class="cls-5" x1="61.61" y1="98.34" x2="61.61" y2="161" />
+                    <polygon class="cls-6" points="64.79 98.34 64.79 140.65 71.39 137.85 61.62 161 51.84 137.85 58.44 140.65 58.44 98.34 64.79 98.34" />
+                    <line class="cls-5" x1="262.3" y1="354.19" x2="214.98" y2="313.11" />
+                    <polygon class="cls-6" points="260.22 356.58 228.27 328.85 226.06 335.67 214.98 313.11 238.87 320.91 232.43 324.05 264.38 351.79 260.22 356.58" />
+                    <line class="cls-5" x1="122.77" y1="149.25" x2="156.13" y2="96.2" />
+                    <polygon class="cls-6" points="120.08 147.56 142.6 111.74 135.53 110.6 156.13 96.2 152.07 121 147.98 115.12 125.45 150.94 120.08 147.56" />
+                    <line class="cls-5" x1="260.09" y1="226.34" x2="267.45" y2="277.34" />
+                    <polygon class="cls-6" points="263.23 225.88 266.92 251.45 267.68 256.74 273.81 253.03 267.45 277.34 254.47 255.82 261.4 257.65 260.63 252.36 256.94 226.79 263.23 225.88" />
+                    <line class="cls-5" x1="55.39" y1="315.95" x2="89.17" y2="368.73" />
+                    <polygon class="cls-6" points="58.06 314.23 80.87 349.87 84.92 343.96 89.17 368.73 68.46 354.49 75.53 353.29 52.72 317.66 58.06 314.23" />
+                    <line class="cls-5" x1="181.69" y1="415.3" x2="172.73" y2="353.28" />
+                    <polygon class="cls-6" points="178.55 415.76 172.5 373.88 166.37 377.6 172.73 353.28 185.72 374.8 178.79 372.97 184.83 414.85 178.55 415.76" />
+                    <line class="cls-5" x1="87.89" y1="545.96" x2="87.89" y2="497.99" />
+                    <polygon class="cls-6" points="84.71 545.96 84.71 523.69 84.71 518.35 78.11 521.15 87.89 497.99 97.66 521.15 91.06 518.35 91.06 523.69 91.06 545.96 84.71 545.96" />
+                    <line class="cls-5" x1="215.03" y1="136.46" x2="277.23" y2="128.88" />
+                    <polygon class="cls-6" points="214.64 133.31 256.64 128.19 253.06 121.98 277.23 128.88 255.43 141.38 257.41 134.49 215.41 139.62 214.64 133.31" />
+                    <line class="cls-5" x1="336.36" y1="184.58" x2="294.29" y2="189.78" />
+                    <polygon class="cls-6" points="336.75 187.73 320.19 189.78 314.88 190.43 318.47 196.64 294.29 189.78 316.07 177.24 314.1 184.13 319.41 183.48 335.97 181.43 336.75 187.73" />
+
+                </g>
+            </svg>
+        </div>
+    </div>
+
+</body>
+<script src="heart.js"></script>
+<style>
+    .off {
+        background: black
+    }
+    
+    div#palette {
+        background: gray;
+        margin: 10px 0px;
+    }
+    
+    div#heart {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        left: 300px;
+        top: -300px;
+    }
+
+</style>
+
+<footer>
+    <nav>
+        <a class='w3-left' id="backbutton"><h3 style='width:auto'> <i class="fa fa-arrow-circle-o-left w3-xlarge"> </i> Back</h3></a>
+        <a class='w3-right' id="backbutton"><h3 style='width:auto'> Next <i class="fa fa-arrow-circle-o-right w3-xlarge"> </i></h3></a>
+    </nav>
+
+
+</footer>
+
+</html>
